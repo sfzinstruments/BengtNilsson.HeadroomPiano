@@ -1,0 +1,3 @@
+sample=HEADROOM PIANO $VEL $MIC $KEY.$EXT
+pitch_keycenter=$KEY
+region_label=$KEY

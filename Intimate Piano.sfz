@@ -1,0 +1,185 @@
+// --------------------------------------
+// SFZ format v2 with ARIA extensions
+// --------------------------------------
+// Headroom Bundle : Intimate Piano
+// by Bengt Nilsson
+// --------------------------------------
+// converted by kinwie
+// --------------------------------------
+
+
+//midi cc
+#define $C_VOL 7
+#define $C_PAN 10
+#define $C_WID 16
+#define $D_VOL 17
+#define $D_PAN 18
+#define $D_WID 19
+//---------------------------
+#define $C_LO_FREQ 20
+#define $C_LO_GAIN 26
+#define $C_LO_BW 32
+#define $C_MI_FREQ 21
+#define $C_MI_GAIN 27
+#define $C_MI_BW 33
+#define $C_HI_FREQ 22
+#define $C_HI_GAIN 28
+#define $C_HI_BW 34
+//---------------------------
+#define $D_LO_FREQ 23
+#define $D_LO_GAIN 29
+#define $D_LO_BW 35
+#define $D_MI_FREQ 24
+#define $D_MI_GAIN 30
+#define $D_MI_BW 36
+#define $D_HI_FREQ 25
+#define $D_HI_GAIN 31
+#define $D_HI_BW 37
+//---------------------------
+#define $DAMPER 67
+#define $RELEASE 72
+#define $VELTRACK 99
+
+//file extension
+#define $EXT flac
+
+
+///////////////////////////////////////////////////////////////////////////
+<control>
+default_path=Samples/
+
+label_cc$C_VOL=Close Mic
+label_cc$C_PAN=Close Pan
+label_cc$C_WID=Close Width
+label_cc$D_VOL=Decca Tree
+label_cc$D_PAN=Decca Pan
+label_cc$D_WID=Decca Width
+label_cc$C_LO_FREQ=C-FreqLow
+label_cc$C_LO_GAIN=C-GainLow
+label_cc$C_LO_BW=C-BwLow
+label_cc$C_MI_FREQ=C-FreqMid
+label_cc$C_MI_GAIN=C-GainMid
+label_cc$C_MI_BW=C-BwMid
+label_cc$C_HI_FREQ=C-FreqHi
+label_cc$C_HI_GAIN=C-GainHi
+label_cc$C_HI_BW=C-BwHi
+label_cc$D_LO_FREQ=D-FreqLow
+label_cc$D_LO_GAIN=D-GainLow
+label_cc$D_LO_BW=D-BwLow
+label_cc$D_MI_FREQ=D-FreqMid
+label_cc$D_MI_GAIN=D-GainMid
+label_cc$D_MI_BW=D-BwMid
+label_cc$D_HI_FREQ=D-FreqHi
+label_cc$D_HI_GAIN=D-GainHi
+label_cc$D_HI_BW=D-BwHi
+label_cc$DAMPER=Damper
+label_cc$RELEASE=Release
+label_cc$VELTRACK=Veltrack
+
+set_hdcc$C_VOL=1
+set_hdcc$C_PAN=0.5
+set_hdcc$C_WID=0.5
+set_hdcc$D_VOL=1
+set_hdcc$D_PAN=0.5
+set_hdcc$D_WID=0.5
+set_hdcc$C_LO_FREQ=0
+set_hdcc$C_LO_GAIN=0.5
+set_hdcc$C_LO_BW=0.75
+set_hdcc$C_MI_FREQ=0.342
+set_hdcc$C_MI_GAIN=0.5
+set_hdcc$C_MI_BW=0.75
+set_hdcc$C_HI_FREQ=0.555
+set_hdcc$C_HI_GAIN=0.5
+set_hdcc$C_HI_BW=0.75
+set_hdcc$D_LO_FREQ=0
+set_hdcc$D_LO_GAIN=0.5
+set_hdcc$D_LO_BW=0.75
+set_hdcc$D_MI_FREQ=0.342
+set_hdcc$D_MI_GAIN=0.5
+set_hdcc$D_MI_BW=0.75
+set_hdcc$D_HI_FREQ=0.555
+set_hdcc$D_HI_GAIN=0.5
+set_hdcc$D_HI_BW=0.75
+set_hdcc$DAMPER=0
+set_hdcc$RELEASE=0.4
+set_hdcc$VELTRACK=0.75
+
+
+//*********************************************************************
+<global>
+amp_veltrack=0
+amp_veltrack_oncc$VELTRACK=100
+ampeg_release_oncc$RELEASE=2
+ampeg_release_curvecc$DAMPER=7
+eq1_freq=20
+eq2_freq=200
+eq3_freq=2000
+eq1_bw=0
+eq2_bw=0
+eq3_bw=0
+cutoff=40
+fil_veltrack=11000
+group_volume=13.3
+#define $VEL LEVEL1
+
+
+//===========================================
+<master>
+locc$C_VOL=1
+amplitude_oncc$C_VOL=100
+pan_oncc$C_PAN=100
+pan_curvecc$C_PAN=1
+width_oncc$C_WID=100
+width_curvecc$C_WID=8
+eq1_freq_oncc$C_LO_FREQ=380
+eq1_gain_oncc$C_LO_GAIN=12
+eq1_gain_curvecc$C_LO_GAIN=1
+eq1_bw_oncc$C_LO_BW=4
+eq2_freq_oncc$C_MI_FREQ=3800
+eq2_gain_oncc$C_MI_GAIN=12
+eq2_gain_curvecc$C_MI_GAIN=1
+eq2_bw_oncc$C_MI_BW=4
+eq3_freq_oncc$C_HI_FREQ=18000
+eq3_gain_oncc$C_HI_GAIN=12
+eq3_gain_curvecc$C_HI_GAIN=1
+eq3_bw_oncc$C_HI_BW=4
+#include "Data/close.txt"
+#include "Data/region.txt"
+
+//===========================================
+<master>
+locc$D_VOL=1
+amplitude_oncc$D_VOL=100
+pan_oncc$D_PAN=100
+pan_curvecc$D_PAN=1
+width_oncc$D_WID=100
+width_curvecc$D_WID=8
+eq1_freq_oncc$D_LO_FREQ=380
+eq1_gain_oncc$D_LO_GAIN=12
+eq1_gain_curvecc$D_LO_GAIN=1
+eq1_bw_oncc$D_LO_BW=4
+eq2_freq_oncc$D_MI_FREQ=3800
+eq2_gain_oncc$D_MI_GAIN=12
+eq2_gain_curvecc$D_MI_GAIN=1
+eq2_bw_oncc$D_MI_BW=4
+eq3_freq_oncc$D_HI_FREQ=18000
+eq3_gain_oncc$D_HI_GAIN=12
+eq3_gain_curvecc$D_HI_GAIN=1
+eq3_bw_oncc$D_HI_BW=4
+#include "Data/decca.txt"
+#include "Data/region.txt"
+
+//--------------------------------------
+
+<curve>
+curve_index=7
+v000=0
+v001=1
+v127=1
+
+<curve>
+curve_index=8
+v000=-1
+v063=0
+v064=0
+v127=2

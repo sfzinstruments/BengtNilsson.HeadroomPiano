@@ -1,0 +1,34 @@
+<group>
+lovel=1
+hivel=59
+group_volume=13.3
+#define $VEL LEVEL1
+#include "Data/region.txt"
+
+<group>
+lovel=60
+hivel=89
+group_volume=6.2
+#define $VEL LEVEL2
+#include "Data/region.txt"
+
+<group>
+lovel=90
+hivel=105
+group_volume=3.3
+#define $VEL LEVEL3
+#include "Data/region.txt"
+
+<group>
+lovel=106
+hivel=119
+group_volume=1.1
+#define $VEL LEVEL4
+#include "Data/region.txt"
+
+<group>
+lovel=120
+hivel=127
+group_volume=0
+#define $VEL LEVEL5
+#include "Data/region.txt"
