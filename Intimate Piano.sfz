@@ -173,9 +173,9 @@ eq3_bw_oncc$D_HI_BW=4
 
 <curve>
 curve_index=7
-v000=0
-v001=1
-v127=1
+v000=1
+v001=0
+v127=0
 
 <curve>
 curve_index=8
