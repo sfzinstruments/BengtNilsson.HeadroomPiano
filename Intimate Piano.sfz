@@ -37,10 +37,10 @@ label_cc$DAMPER=Damper
 label_cc$RELEASE=Release
 label_cc$VELTRACK=Veltrack
 
-set_hdcc$C_VOL=1
+set_hdcc$C_VOL=0.5
 set_hdcc$C_PAN=0.5
 set_hdcc$C_WID=0.5
-set_hdcc$D_VOL=1
+set_hdcc$D_VOL=0.5
 set_hdcc$D_PAN=0.5
 set_hdcc$D_WID=0.5
 set_hdcc$DAMPER=0
