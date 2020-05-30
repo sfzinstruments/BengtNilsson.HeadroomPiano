@@ -27,10 +27,10 @@
 <control>
 default_path=Samples/
 
-label_cc$C_VOL=Close Mic
+label_cc$C_VOL=Close Vol
 label_cc$C_PAN=Close Pan
 label_cc$C_WID=Close Width
-label_cc$D_VOL=Decca Tree
+label_cc$D_VOL=Decca Vol
 label_cc$D_PAN=Decca Pan
 label_cc$D_WID=Decca Width
 label_cc$DAMPER=Damper
