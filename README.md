@@ -1,5 +1,6 @@
 # Headroom Piano
 
+Yamaha C3 Grand Piano.
 Made by [Bengt Nilsson] originally for Kontakt NKI format:
 
 - Two mic positions
@@ -16,17 +17,17 @@ Sforzando's generic controls values :
 - 0% -to- 100%
 - Center value is 50% (set-to-default by Ctrl click)
 
-Two microphones layers : Close Mic and Decca Tree
-Each has dedicated volume, pan and width controls
+Two microphones layers : Close Mic and Decca Tree.
+Each has dedicated volume, pan and width controls.
 
 - Close Mic : close mic volume
 - Decca Tree : decca tree mic volume
 - Pan center is 50%. Lower value go Left and higher value go Right
 - Width normal is 50%. Higher value go wider. 0% is mono
 
-3-band EQ for each mic
-C is for Close mic
-D is for Decca Tree mic
+3-band EQ (peak) for each mic.
+C is for Close mic.
+D is for Decca Tree mic.
 
 - FreqLow range : 20Hz to 400Hz (initial at 20Hz)
 - FreqMid range : 200Hz to 4kHz (initial at 1.5kHz)
@@ -36,17 +37,19 @@ D is for Decca Tree mic
 
 Damper mode, added for high notes damper on/off option which is not available in the original Kontakt version.
 It uses CC67, so you can use sforzando's Left Pedal to switch between the 2 modes : Undampened and Dampened.
-0% is Undampened (as initial sfz load)
-1% or greater is Dampened (by pressing the Left Pedal)
+- 0% : Undampened (as initial sfz load)
+- 1% or greater : Dampened (by pressing the Left Pedal)
 
-Release range, up to 2 secs, default at 0.8s
+Release range, up to 2 secs, initial at 0.8s.
 
 Veltrack is volume to velocity tracking.
-Lowering the value will cause the lower velocity notes louder
-You can adjust this for different dynamics, keyboard's pressure or playing style if needed
+Lowering the value will cause the lower velocity notes louder.
+You can adjust this for different dynamics, keyboard's pressure or playing style if needed.
 
 Tips:
 You can peek the used MIDI CC number by clicking the 'blue box' (Open in Text Editor) in sforzando's Info page because I didn't label the numbers to the Controls page.
+
+Intimate Piano is the child preset that use only the lowest velocity layer without EQ feature
 
 ## License
 
