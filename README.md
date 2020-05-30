@@ -15,13 +15,12 @@ with the author's permission as long keeping the original instrument name.
 
 Sforzando's generic controls values :
 - 0% -to- 100%
-- Center value is 50% (set-to-default by Ctrl click)
+- Center value is 50% (set-to-default by Ctrl-click)
 
 Two microphones layers : Close Mic and Decca Tree.
 Each has dedicated volume, pan and width controls.
 
-- Close Mic : close mic volume
-- Decca Tree : decca tree mic volume
+- Volume at 0% will also turn off the mic layer and saving polyphony
 - Pan center is 50%. Lower value go Left and higher value go Right
 - Width normal is 50%. Higher value go wider. 0% is mono
 
@@ -32,7 +31,7 @@ D is for Decca Tree mic.
 - FreqLow range : 20Hz to 400Hz (initial at 20Hz)
 - FreqMid range : 200Hz to 4kHz (initial at 1.5kHz)
 - FreqHi range : 2kHz to 20kHz (initial at 12kHz)
-- Gain range : -/+ 12 dB
+- Gain range : -/+ 12 dB (initial at 0 dB)
 - Bandwidth range : 0 to 4 octaves (initial at 3 oct)
 
 Damper mode, added for high notes damper on/off option which is not available in the original Kontakt version.
