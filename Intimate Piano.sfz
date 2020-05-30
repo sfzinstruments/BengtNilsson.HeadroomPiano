@@ -61,7 +61,7 @@ group_volume=13.3
 
 
 //===========================================
-<master>
+<group>
 locc$C_VOL=1
 amplitude_oncc$C_VOL=100
 pan_oncc$C_PAN=100
@@ -72,7 +72,7 @@ width_curvecc$C_WID=8
 #include "Data/region.txt"
 
 //===========================================
-<master>
+<group>
 locc$D_VOL=1
 amplitude_oncc$D_VOL=100
 pan_oncc$D_PAN=100
