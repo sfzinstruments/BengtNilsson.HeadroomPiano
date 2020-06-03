@@ -9,36 +9,38 @@
 
 
 //midi cc
-#define $C_VOL 7
-#define $C_PAN 10
-#define $C_WID 16
-#define $D_VOL 17
-#define $D_PAN 18
-#define $D_WID 19
-//---------------------------
-#define $C_LO_FREQ 20
-#define $C_LO_GAIN 26
-#define $C_LO_BW 32
-#define $C_MI_FREQ 21
-#define $C_MI_GAIN 27
-#define $C_MI_BW 33
-#define $C_HI_FREQ 22
-#define $C_HI_GAIN 28
-#define $C_HI_BW 34
-//---------------------------
-#define $D_LO_FREQ 23
-#define $D_LO_GAIN 29
-#define $D_LO_BW 35
-#define $D_MI_FREQ 24
-#define $D_MI_GAIN 30
-#define $D_MI_BW 36
-#define $D_HI_FREQ 25
-#define $D_HI_GAIN 31
-#define $D_HI_BW 37
-//---------------------------
+#define $M_VOL 7
+#define $M_PAN 10
+#define $M_WID 40
 #define $DAMPER 67
 #define $RELEASE 72
-#define $VELTRACK 99
+#define $VELTRACK 73
+#define $C_VOL 74
+#define $C_PAN 75
+#define $C_WID 76
+#define $D_VOL 77
+#define $D_PAN 78
+#define $D_WID 79
+//---------------------------
+#define $C_LO_FREQ 80
+#define $C_LO_GAIN 86
+#define $C_LO_BW 92
+#define $C_MI_FREQ 81
+#define $C_MI_GAIN 87
+#define $C_MI_BW 93
+#define $C_HI_FREQ 82
+#define $C_HI_GAIN 88
+#define $C_HI_BW 94
+//---------------------------
+#define $D_LO_FREQ 83
+#define $D_LO_GAIN 89
+#define $D_LO_BW 95
+#define $D_MI_FREQ 84
+#define $D_MI_GAIN 90
+#define $D_MI_BW 96
+#define $D_HI_FREQ 85
+#define $D_HI_GAIN 91
+#define $D_HI_BW 97
 
 //file extension
 #define $EXT flac
@@ -48,6 +50,12 @@
 <control>
 default_path=Samples/
 
+label_cc$M_VOL=Master Vol
+label_cc$M_PAN=Master Pan
+label_cc$M_WID=Master Width
+label_cc$DAMPER=Damper
+label_cc$RELEASE=Release
+label_cc$VELTRACK=Veltrack
 label_cc$C_VOL=Close Vol
 label_cc$C_PAN=Close Pan
 label_cc$C_WID=Close Width
@@ -72,10 +80,13 @@ label_cc$D_MI_BW=D-BwMid
 label_cc$D_HI_FREQ=D-FreqHi
 label_cc$D_HI_GAIN=D-GainHi
 label_cc$D_HI_BW=D-BwHi
-label_cc$DAMPER=Damper
-label_cc$RELEASE=Release
-label_cc$VELTRACK=Veltrack
 
+set_hdcc$M_VOL=0.79
+set_hdcc$M_PAN=0.5
+set_hdcc$M_WID=0.5
+set_hdcc$DAMPER=0
+set_hdcc$RELEASE=0.4
+set_hdcc$VELTRACK=1
 set_hdcc$C_VOL=1
 set_hdcc$C_PAN=0.5
 set_hdcc$C_WID=0.5
@@ -100,13 +111,15 @@ set_hdcc$D_MI_BW=0.75
 set_hdcc$D_HI_FREQ=0.555
 set_hdcc$D_HI_GAIN=0.5
 set_hdcc$D_HI_BW=0.75
-set_hdcc$DAMPER=0
-set_hdcc$RELEASE=0.4
-set_hdcc$VELTRACK=1
 
 
 //*********************************************************************
 <global>
+amplitude_oncc$M_VOL=100
+pan_oncc$M_PAN=100
+pan_curvecc$M_PAN=1
+width_oncc$M_WID=100
+width_curvecc$M_WID=8
 amp_veltrack=0
 amp_veltrack_oncc$VELTRACK=100
 ampeg_release_oncc$RELEASE=2
