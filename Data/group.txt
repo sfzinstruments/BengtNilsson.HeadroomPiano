@@ -1,34 +1,34 @@
 <group>
-lovel=1
-hivel=59
-group_volume=13.3
+lovel=$LOVEL1
+hivel=$HIVEL1
+group_volume=$VOL_VEL1
 #define $VEL LEVEL1
 #include "Data/region.txt"
 
 <group>
-lovel=60
-hivel=89
-group_volume=6.2
+lovel=$LOVEL2
+hivel=$HIVEL2
+group_volume=$VOL_VEL2
 #define $VEL LEVEL2
 #include "Data/region.txt"
 
 <group>
-lovel=90
-hivel=105
-group_volume=3.3
+lovel=$LOVEL3
+hivel=$HIVEL3
+group_volume=$VOL_VEL3
 #define $VEL LEVEL3
 #include "Data/region.txt"
 
 <group>
-lovel=106
-hivel=119
-group_volume=1.1
+lovel=$LOVEL4
+hivel=$HIVEL4
+group_volume=$VOL_VEL4
 #define $VEL LEVEL4
 #include "Data/region.txt"
 
 <group>
-lovel=120
-hivel=127
-group_volume=0
+lovel=$LOVEL5
+hivel=$HIVEL5
+group_volume=$VOL_VEL5
 #define $VEL LEVEL5
 #include "Data/region.txt"
