@@ -48,6 +48,14 @@ You can adjust this for different dynamics, keyboard's pressure or playing style
 Tips:
 You can peek the used MIDI CC number by clicking the 'blue box' (Open in Text Editor) in sforzando's Info page because I didn't label the numbers to the Controls page.
 
+The velocity ranges can be directly adjusted by clicking sforzando's "Open in Text Editor" button to match user's taste or keyboard response.
+It will open the sfz and then change the values of 5 velocity layers :
+#define $LOVELx
+#define $HIVELx
+
+And velocity layers' volume (in dB) can be re-adjusted at these lines :
+#define $VOL_VELx
+
 Intimate Piano is the child preset that use only the lowest velocity layer without EQ feature
 
 ## License
