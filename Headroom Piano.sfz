@@ -8,6 +8,29 @@
 // --------------------------------------
 
 
+//velocity range
+#define $LOVEL1 1
+#define $HIVEL1 59
+//---
+#define $LOVEL2 60
+#define $HIVEL2 89
+//---
+#define $LOVEL3 90
+#define $HIVEL3 105
+//---
+#define $LOVEL4 106
+#define $HIVEL4 119
+//---
+#define $LOVEL5 120
+#define $HIVEL5 127
+
+//velocity layer volume
+#define $VOL_VEL1 13.3
+#define $VOL_VEL2 6.2
+#define $VOL_VEL3 3.3
+#define $VOL_VEL4 1.1
+#define $VOL_VEL5 0
+
 //midi cc
 #define $M_VOL 7
 #define $M_PAN 10
