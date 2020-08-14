@@ -68,6 +68,8 @@ amp_veltrack=0
 amp_veltrack_oncc$VELTRACK=100
 ampeg_release_oncc$RELEASE=2
 ampeg_release_curvecc$DAMPER=7
+note_polyphony=1
+off_time=0.5
 cutoff=40
 fil_veltrack=11000
 group_volume=13.3
@@ -76,6 +78,7 @@ group_volume=13.3
 
 //===========================================
 <group>
+group=1
 locc$C_VOL=1
 amplitude_oncc$C_VOL=100
 pan_oncc$C_PAN=100
@@ -87,6 +90,7 @@ width_curvecc$C_WID=8
 
 //===========================================
 <group>
+group=2
 locc$D_VOL=1
 amplitude_oncc$D_VOL=100
 pan_oncc$D_PAN=100
