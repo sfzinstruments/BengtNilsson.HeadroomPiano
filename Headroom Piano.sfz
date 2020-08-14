@@ -147,6 +147,8 @@ amp_veltrack=0
 amp_veltrack_oncc$VELTRACK=100
 ampeg_release_oncc$RELEASE=2
 ampeg_release_curvecc$DAMPER=7
+note_polyphony=1
+off_time=0.5
 eq1_freq=20
 eq2_freq=200
 eq3_freq=2000
@@ -157,6 +159,7 @@ eq3_bw=0
 
 //===========================================
 <master>
+group=1
 locc$C_VOL=1
 amplitude_oncc$C_VOL=100
 pan_oncc$C_PAN=100
@@ -180,6 +183,7 @@ eq3_bw_oncc$C_HI_BW=4
 
 //===========================================
 <master>
+group=2
 locc$D_VOL=1
 amplitude_oncc$D_VOL=100
 pan_oncc$D_PAN=100
