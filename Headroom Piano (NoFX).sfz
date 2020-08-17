@@ -8,6 +8,18 @@
 // --------------------------------------
 
 
+//midi cc
+#define $M_VOL 7
+#define $M_PAN 10
+#define $M_WID 40
+#define $DAMPER 67
+#define $RELEASE 72
+#define $VELTRACK 73
+#define $C_VOL 74
+#define $C_PAN 75
+#define $D_VOL 77
+#define $D_PAN 78
+
 //velocity range
 #define $LOVEL1 1
 #define $HIVEL1 59
@@ -30,18 +42,6 @@
 #define $VOL_VEL3 3.3
 #define $VOL_VEL4 1.1
 #define $VOL_VEL5 0
-
-//midi cc
-#define $M_VOL 7
-#define $M_PAN 10
-#define $M_WID 40
-#define $DAMPER 67
-#define $RELEASE 72
-#define $VELTRACK 73
-#define $C_VOL 74
-#define $C_PAN 75
-#define $D_VOL 77
-#define $D_PAN 78
 
 //file extension
 #define $EXT flac
