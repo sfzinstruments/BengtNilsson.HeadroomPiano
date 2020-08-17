@@ -1,0 +1,96 @@
+// --------------------------------------
+// SFZ format v2 with ARIA extensions
+// --------------------------------------
+// Headroom Bundle : Intimate Piano
+// by Bengt Nilsson
+// --------------------------------------
+// converted by kinwie
+// --------------------------------------
+
+
+//midi cc
+#define $M_VOL 7
+#define $M_PAN 10
+#define $M_WID 40
+#define $DAMPER 67
+#define $RELEASE 72
+#define $VELTRACK 73
+#define $C_VOL 74
+#define $C_PAN 75
+#define $D_VOL 77
+#define $D_PAN 78
+
+//file extension
+#define $EXT flac
+
+
+///////////////////////////////////////////////////////////////////////////
+<control>
+default_path=Samples/
+
+label_cc$M_VOL=Master Vol
+label_cc$M_PAN=Master Pan
+label_cc$M_WID=-Unused-
+label_cc$DAMPER=Damper
+label_cc$RELEASE=Release
+label_cc$VELTRACK=Veltrack
+label_cc$C_VOL=Close Vol
+label_cc$C_PAN=Close Pan
+label_cc$D_VOL=Decca Vol
+label_cc$D_PAN=Decca Pan
+
+set_hdcc$M_VOL=0.79
+set_hdcc$M_PAN=0.5
+set_hdcc$DAMPER=0
+set_hdcc$RELEASE=0.4
+set_hdcc$VELTRACK=0.75
+set_hdcc$C_VOL=0.5
+set_hdcc$C_PAN=0.5
+set_hdcc$D_VOL=0.5
+set_hdcc$D_PAN=0.5
+
+
+//*********************************************************************
+<global>
+amplitude_oncc$M_VOL=100
+pan_oncc$M_PAN=100
+pan_curvecc$M_PAN=1
+amp_veltrack=0
+amp_veltrack_oncc$VELTRACK=100
+ampeg_release_oncc$RELEASE=2
+ampeg_release_curvecc$DAMPER=7
+note_polyphony=1
+off_time=0.5
+cutoff=40
+fil_veltrack=11000
+group_volume=13.3
+#define $VEL LEVEL1
+
+
+//===========================================
+<group>
+group=1
+locc$C_VOL=1
+amplitude_oncc$C_VOL=100
+pan_oncc$C_PAN=100
+pan_curvecc$C_PAN=1
+#include "Data/close.txt"
+#include "Data/region.txt"
+
+//===========================================
+<group>
+group=2
+locc$D_VOL=1
+amplitude_oncc$D_VOL=100
+pan_oncc$D_PAN=100
+pan_curvecc$D_PAN=1
+#include "Data/decca.txt"
+#include "Data/region.txt"
+
+//--------------------------------------
+
+<curve>
+curve_index=7
+v000=1
+v001=0
+v127=0
