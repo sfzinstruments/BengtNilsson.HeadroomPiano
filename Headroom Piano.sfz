@@ -104,7 +104,7 @@ label_cc$D_HI_FREQ=D-FreqHi
 label_cc$D_HI_GAIN=D-GainHi
 label_cc$D_HI_BW=D-BwHi
 
-set_hdcc$M_VOL=0.79
+set_hdcc$M_VOL=0.787
 set_hdcc$M_PAN=0.5
 set_hdcc$M_WID=0.5
 set_hdcc$DAMPER=0
@@ -139,6 +139,7 @@ set_hdcc$D_HI_BW=0.75
 //*********************************************************************
 <global>
 amplitude_oncc$M_VOL=100
+amplitude_curvecc$M_VOL=4
 pan_oncc$M_PAN=100
 pan_curvecc$M_PAN=1
 width_oncc$M_WID=100
