@@ -62,7 +62,7 @@ label_cc$C_PAN=Close Pan
 label_cc$D_VOL=Decca Vol
 label_cc$D_PAN=Decca Pan
 
-set_hdcc$M_VOL=0.79
+set_hdcc$M_VOL=0.787
 set_hdcc$M_PAN=0.5
 set_hdcc$DAMPER=0
 set_hdcc$RELEASE=0.4
@@ -76,6 +76,7 @@ set_hdcc$D_PAN=0.5
 //*********************************************************************
 <global>
 amplitude_oncc$M_VOL=100
+amplitude_curvecc$M_VOL=4
 pan_oncc$M_PAN=100
 pan_curvecc$M_PAN=1
 amp_veltrack=0
