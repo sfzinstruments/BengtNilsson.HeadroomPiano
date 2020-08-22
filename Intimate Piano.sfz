@@ -43,7 +43,7 @@ label_cc$D_VOL=Decca Vol
 label_cc$D_PAN=Decca Pan
 label_cc$D_WID=Decca Width
 
-set_hdcc$M_VOL=0.787
+set_hdcc$M_VOL=0.7874
 set_hdcc$M_PAN=0.5
 set_hdcc$M_WID=0.5
 set_hdcc$DAMPER=0
