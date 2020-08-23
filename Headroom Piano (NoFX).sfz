@@ -62,7 +62,7 @@ label_cc$C_PAN=Close Pan
 label_cc$D_VOL=Decca Vol
 label_cc$D_PAN=Decca Pan
 
-set_hdcc$M_VOL=0.7874
+set_cc$M_VOL=100
 set_hdcc$M_PAN=0.5
 set_hdcc$DAMPER=0
 set_hdcc$RELEASE=0.4
