@@ -104,7 +104,7 @@ label_cc$D_HI_FREQ=D-FreqHi
 label_cc$D_HI_GAIN=D-GainHi
 label_cc$D_HI_BW=D-BwHi
 
-set_hdcc$M_VOL=0.7874
+set_cc$M_VOL=100
 set_hdcc$M_PAN=0.5
 set_hdcc$M_WID=0.5
 set_hdcc$DAMPER=0
