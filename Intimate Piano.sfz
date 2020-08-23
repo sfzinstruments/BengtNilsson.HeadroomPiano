@@ -9,8 +9,6 @@
 
 
 //midi cc
-#define $M_VOL 7
-#define $M_PAN 10
 #define $M_WID 40
 #define $DAMPER 67
 #define $RELEASE 72
@@ -30,8 +28,8 @@
 <control>
 default_path=Samples/
 
-label_cc$M_VOL=Master Vol
-label_cc$M_PAN=Master Pan
+label_cc7=Master Vol
+label_cc10=Master Pan
 label_cc$M_WID=Master Width
 label_cc$DAMPER=Damper
 label_cc$RELEASE=Release
@@ -43,8 +41,8 @@ label_cc$D_VOL=Decca Vol
 label_cc$D_PAN=Decca Pan
 label_cc$D_WID=Decca Width
 
-set_cc$M_VOL=100
-set_hdcc$M_PAN=0.5
+set_cc7=100
+set_hdcc10=0.5
 set_hdcc$M_WID=0.5
 set_hdcc$DAMPER=0
 set_hdcc$RELEASE=0.4
@@ -59,10 +57,10 @@ set_hdcc$D_WID=0.5
 
 //*********************************************************************
 <global>
-amplitude_oncc$M_VOL=100
-amplitude_curvecc$M_VOL=4
-pan_oncc$M_PAN=100
-pan_curvecc$M_PAN=1
+amplitude_oncc7=100
+amplitude_curvecc7=4
+pan_oncc10=100
+pan_curvecc10=1
 width_oncc$M_WID=100
 width_curvecc$M_WID=8
 amp_veltrack=0
