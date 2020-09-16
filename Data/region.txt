@@ -23,10 +23,10 @@ group_label=$VEL
 <region> #define $KEY 81 lokey=80 hikey=82 #include "Data/sample.txt"
 <region> #define $KEY 84 lokey=83 hikey=85 #include "Data/sample.txt"
 <region> #define $KEY 87 lokey=86 hikey=88 #include "Data/sample.txt"
-<region> #define $KEY 90 lokey=89 hikey=91 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=20
-<region> #define $KEY 93 lokey=92 hikey=94 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=20
-<region> #define $KEY 96 lokey=95 hikey=97 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=20
-<region> #define $KEY 99 lokey=98 hikey=100 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=20
-<region> #define $KEY 102 lokey=101 hikey=103 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=20
-<region> #define $KEY 105 lokey=104 hikey=106 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=20
-<region> #define $KEY 108 lokey=107 hikey=108 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=20
+<region> #define $KEY 90 lokey=89 hikey=91 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
+<region> #define $KEY 93 lokey=92 hikey=94 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
+<region> #define $KEY 96 lokey=95 hikey=97 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
+<region> #define $KEY 99 lokey=98 hikey=100 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
+<region> #define $KEY 102 lokey=101 hikey=103 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
+<region> #define $KEY 105 lokey=104 hikey=106 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
+<region> #define $KEY 108 lokey=107 hikey=108 #include "Data/sample.txt" ampeg_release_oncc$DAMPER=10
