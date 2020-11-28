@@ -73,7 +73,7 @@ default_path=Samples/
 
 label_cc7=Master Vol
 label_cc10=Master Pan
-label_cc$M_WID=Master Width
+label_cc$M_WID=-Unused-
 label_cc$DAMPER=Damper
 label_cc$RELEASE=Release
 label_cc$VELTRACK=Veltrack
@@ -104,7 +104,6 @@ label_cc$D_HI_BW=D-BwHi
 
 set_cc7=100
 set_hdcc10=0.5
-set_hdcc$M_WID=0.5
 set_hdcc$DAMPER=0
 set_hdcc$RELEASE=0.4
 set_hdcc$VELTRACK=1
@@ -140,8 +139,6 @@ amplitude_oncc7=100
 amplitude_curvecc7=4
 pan_oncc10=100
 pan_curvecc10=1
-width_oncc$M_WID=100
-width_curvecc$M_WID=8
 amp_veltrack=0
 amp_veltrack_oncc$VELTRACK=100
 ampeg_release_oncc$RELEASE=2
