@@ -76,7 +76,7 @@ Veltrack is volume to velocity tracking. Lowering the value will cause the lower
 
 ## Update Log
 
-- Jan 2, 2022 : Rename Damper to Hi-Damp for less confusion.
+- Jan 2, 2022 : Rename control, Damper to Hi-Damp for less confusion.
 
 - Nov 28, 2020 : Remove unnecessary master width for reducing CPU load and sticked an unused CC to maintain CC order.
 
