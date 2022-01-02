@@ -11,7 +11,15 @@ Made by [Bengt Nilsson] originally for Kontakt NKI format:
 Mapped by kinwie using sfz format v2 with ARIA extensions,
 with the author's permission as long keeping the original instrument name.
 
-## Details
+Audio demo : https://sfzinstruments.github.io/pianos/headroom_piano
+
+
+## Compatibility Notes
+
+This SFZ Instrument is reconstructed with the heavily use of SFZ specification level 2.0 + ARIA Extensions. With this is mind, this instrument will only played properly in Plogue sforzando and similar sfz samplers that used ARIA Engine. Trying to play this instrument in other than ARIA-based sfz samplers may cause issues and problems if it doesn't support the opcodes superset used in this sfz instrument. If ARIA-based sfz sampler is not your choice, we advised you to choose a sfz sampler that has similar level of opcodes support for this instrument can be played and sounded as it should.
+
+
+## Control Details
 
 Sforzando's generic controls values :
 - 0% -to- 100%
@@ -34,33 +42,46 @@ D is for Decca Tree mic.
 - Gain range : -/+ 12 dB (initial at 0 dB)
 - Bandwidth range : 0 to 4 octaves (initial at 3 oct)
 
-Damper mode, added for high notes damper on/off option which is not available in the original Kontakt version.
+High Damper mode, added for high notes damper on/off option which is not available in the original Kontakt version.
 It uses CC67, so you can use sforzando's Left Pedal to switch between the 2 modes : Undampened and Dampened.
 - 0% : Undampened (as initial sfz load)
 - 1% or greater : Dampened (by pressing the Left Pedal)
 
 Release range, up to 2 secs, initial at 0.8s.
 
-Veltrack is volume to velocity tracking.
-Lowering the value will cause the lower velocity notes louder.
-You can adjust this for different dynamics, keyboard's pressure or playing style if needed.
+Veltrack is volume to velocity tracking. Lowering the value will cause the lower velocity notes louder.
 
-Tips:
-You can peek the used MIDI CC number by clicking the 'blue box' (Open in Text Editor) in sforzando's Info page because I didn't label the numbers to the Controls page.
 
-The velocity ranges can be directly adjusted by clicking sforzando's "Open in Text Editor" button to match user's taste or keyboard response.
-It will open the sfz and then change the values of 5 velocity layers :
-`#define $LOVELx`
-`#define $HIVELx`
+## Improvements and Features
 
-And velocity layers' volume (in dB) can be re-adjusted at these lines :
-`#define $VOL_VELx`
+- This piano has the note-selfmasking sfz native feature and polyphony optimized. This means, when playing a lot of notes (e.g. repetitive, trills or sustain pedal down), the voices count will be handled effectively and lower, which also means less jumping in CPU usage and results in more natural piano sound behavior.
 
-Intimate Piano is the child preset that use only the lowest velocity layer without EQ feature
 
-## No Effect version update
+## Usage Tips
 
-Added no effect version for both sfz presets, without width and equalizers, which have advantage of low CPU usage.
+- Setting Veltrack value to achieve a pleasant dynamic range that suit you also depend on your playing style and your keyboard/MIDI controller touch response. Try increase and decrease this "Veltrack" parameter as you play and feel the suitable one for you. To change the default value permanently, find this line in the sfz file : `set_hdcc$VELTRACK=1` and change the value to the one you that wanted, range from 0 to 1.
+
+- MIDI CC numbers are assigned at the top of the sfz file with the #define macro. They can be easily changed to your personal favor or to match your MIDI controller device setup. After loading the instrument in sforzando, click the "Open In Text Editor" blue botton at the INFO page, the sfz file will open by your default text editor. You will see a list of parameter's defined numbers. Change the number to your preference and then save it (e.g. Ctrl+S in WinOS), the CC numbers are updated to new ones. This is a handy feature in sfz and is a bit similar to MIDI Learn function.
+
+- The velocity ranges can be directly adjusted also using "Open In Text Editor" button to match your taste or keyboard response. 5 velocity layers : `#define $LOVELx` /  `#define $HIVELx`.
+
+- Velocity layers' volume (in dB) can be re-adjusted at these lines : `#define $VOL_VELx`
+
+- Intimate Piano is the child preset that use only the lowest velocity layer without EQ feature.
+
+- No effect version added for both sfz presets, without width and equalizers, which have advantage of low CPU usage.
+
+
+## Update Log
+
+- Jan 2, 2022 : Rename Damper to Hi-Damp for less confusion.
+
+- Nov 28, 2020 : Remove unnecessary master width for reducing CPU load and sticked an unused CC to maintain CC order.
+
+- Sep 16, 2020 : Polyphony optimization by reducing high dampened notes release time from 20 to 10 seconds.
+
+- Aug 17, 2020 : Add No Effect version
+
 
 ## License
 
