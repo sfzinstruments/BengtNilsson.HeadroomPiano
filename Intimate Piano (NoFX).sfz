@@ -28,8 +28,8 @@ default_path=Samples/
 
 label_cc7=Master Vol
 label_cc10=Master Pan
-label_cc$M_WID=-Unused-
-label_cc$DAMPER=Damper
+label_cc$M_WID=-
+label_cc$DAMPER=Hi-Damp
 label_cc$RELEASE=Release
 label_cc$VELTRACK=Veltrack
 label_cc$C_VOL=Close Vol
