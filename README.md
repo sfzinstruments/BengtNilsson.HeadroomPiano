@@ -28,7 +28,7 @@ Sforzando's generic controls values :
 Two microphones layers : Close Mic and Decca Tree.
 Each has dedicated volume, pan and width controls.
 
-- Volume at 0% will also turn off the mic layer and saving polyphony
+- Volume center is 50%, turn it up to 100% add up to +6 dB
 - Pan center is 50%. Lower value go Left and higher value go Right
 - Width normal is 50%. Higher value go wider. 0% is mono
 
@@ -55,6 +55,8 @@ Veltrack is volume to velocity tracking. Lowering the value will cause the lower
 ## Improvements and Features
 
 - This piano has the note-selfmasking sfz native feature and polyphony optimized. This means, when playing a lot of notes (e.g. repetitive, trills or sustain pedal down), the voices count will be handled effectively and lower, which also means less jumping in CPU usage and results in more natural piano sound behavior.
+
+- Turning off either mic volume, Close Vol or Decca Vol at 0% will also disabling that mic layer and saving polyphony.
 
 
 ## Usage Tips
