@@ -63,7 +63,7 @@ Veltrack is volume to velocity tracking. Lowering the value will cause the lower
 
 - Setting Veltrack value to achieve a pleasant dynamic range that suit you also depend on your playing style and your keyboard/MIDI controller touch response. Try increase and decrease this "Veltrack" parameter as you play and feel the suitable one for you. To change the default value permanently, find this line in the sfz file : `set_hdcc$VELTRACK=1` and change the value to the one that you wanted, range from 0 to 1.
 
-- MIDI CC numbers are assigned at the top of the sfz file with the #define macro. They can be easily changed to your personal favor or to match your MIDI controller device setup. After loading the instrument in sforzando, click the "Open In Text Editor" blue button at the INFO page, the sfz file will open by your default text editor. You will see a list of parameter's defined numbers. Change the number to your preference and then save it (e.g. Ctrl+S in WinOS), the CC numbers are updated to new ones. This is a handy feature in sfz and is a bit similar to MIDI Learn function.
+- MIDI CC numbers are assigned at the top of the sfz file with the #define macro. They can be quick easily changed to your personal favor or to match your MIDI controller device setup. After loading the instrument in sforzando, click the "Open In Text Editor" blue button at the INFO page, the sfz file will open by your default text editor. You will see a list of parameter's defined numbers. Change the number to your preference and then save it (e.g. Ctrl+S in WinOS), the CC numbers are updated to new ones. This is a handy feature in sfz and is a bit similar to MIDI Learn function.
 
 - The velocity ranges can be directly adjusted also using "Open In Text Editor" button to match your taste or keyboard response. 5 velocity layers : `#define $LOVELx` /  `#define $HIVELx`.
 
@@ -72,6 +72,8 @@ Veltrack is volume to velocity tracking. Lowering the value will cause the lower
 - Intimate Piano is the child preset that use only the lowest velocity layer without EQ feature.
 
 - No effect version added for both sfz presets, without width and equalizers, which have advantage of low CPU usage.
+
+- If you are an advanced user and well understand this SFZ format, you can also modify anything in this sfz instrument to your personal taste, make new presets and settings that suit to your private need. SFZ is an easy-to-learn format and very editable. However, if you use this sfz as your basis to create a new one and want to distribute it, we just ask to explicitly put a note that it's derived from this sfz instrument in this github repository.
 
 
 ## Update Log
